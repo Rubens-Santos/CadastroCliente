@@ -127,5 +127,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 AUTH_USER_MODEL = 'usuarios.CustomUsuario'
 
+LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = '/admin/'
 LOGOUT_REDIRECT_URL = 'index'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
